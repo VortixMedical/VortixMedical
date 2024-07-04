@@ -3756,19 +3756,35 @@ color: rgba(255, 255, 255, 0.50);
     font-size: 7.2rem;
   }
 
+  .contact-address {
+    font-size: 3rem;
+  }
+
+  .contact-numbers {
+    font-size: 3rem;
+  }
+
 }
 
 @media only screen and (max-width:900px) {
   .contact-main {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .contact-email a {
     font-size: 6.2rem;
   }
 
+  .contact-address {
+    font-size: 3rem;
+  }
+
+  .contact-numbers {
+    font-size: 3rem;
+  }
+
   .contact-social {
-    font-size: 4rem;
+    font-size:2.5rem;
   }
 
 }
@@ -3780,6 +3796,14 @@ color: rgba(255, 255, 255, 0.50);
 
   .contact-email a {
     font-size: 5.5rem;
+  }
+
+  .contact-address {
+    font-size: 2.6rem;
+  }
+
+  .contact-numbers {
+    font-size: 2.6rem;
   }
 
   .contact-social {
@@ -3795,6 +3819,14 @@ color: rgba(255, 255, 255, 0.50);
 
   .contact-email a {
     font-size: 3.8rem;
+  }
+
+  .contact-address {
+    font-size: 2.4rem;
+  }
+
+  .contact-numbers {
+    font-size: 2.4rem;
   }
 
   .contact-social {
@@ -3814,6 +3846,14 @@ color: rgba(255, 255, 255, 0.50);
     margin-top: 7.2rem;
   }
 
+  .contact-address {
+    font-size: 2.1rem;
+  }
+
+  .contact-numbers {
+    font-size: 2.1rem;
+  }
+
   .contact-social {
     font-size: 3rem;
   }
@@ -3829,6 +3869,14 @@ color: rgba(255, 255, 255, 0.50);
     font-size: 3rem;
   }
 
+  .contact-address {
+    font-size: 1.8rem;
+  }
+
+  .contact-numbers{
+    font-size: 1.8rem;
+  }
+
 }
 
 @media only screen and (max-width:400px) {
@@ -3839,6 +3887,14 @@ color: rgba(255, 255, 255, 0.50);
 
   .contact-email a {
     font-size: 2.5rem;
+  }
+
+  .contact-address {
+    font-size: 1.6rem;
+  }
+
+  .contact-numbers {
+    font-size: 1.6rem;
   }
 
   .contact-social {
