@@ -969,6 +969,7 @@ input[type="button"].btn--primary {
   background: #0067B9;
   border-color: #0067B9;
   color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
 
 .btn.btn--primary:hover,
@@ -983,6 +984,7 @@ input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
   background: #0067B9;
   border-color: #0067B9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0); /* Adjust the values as needed */
 }
 
 /* button modifiers
@@ -1436,6 +1438,17 @@ body.menu-is-open {
 .display-1 {
   font-family: "uni_neuebold", sans-serif;
   color: black;
+  font-weight: 600;
+  font-size: 4.6rem;
+  line-height: 1.5;
+  letter-spacing: -0.03rem;
+  margin-top: 0;
+  margin-bottom: 4.8rem;
+}
+
+.display-2 {
+  font-family: "uni_neuebold", sans-serif;
+  color: rgba(255, 255, 255, 0.50);
   font-weight: 600;
   font-size: 4.6rem;
   line-height: 1.5;
@@ -1945,6 +1958,7 @@ body.menu-is-open {
   text-transform: uppercase;
   letter-spacing: .5rem;
   color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: fixed;
@@ -2267,14 +2281,15 @@ body.menu-is-open {
 
 .home-content__button .btn:not(.btn--primary) {
   background-color: white;
-  border-color: white
-  color: #FFFFFF;
+  border-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
 
 .home-content__button .btn:not(.btn--primary):hover,
 .home-content__button .btn:not(.btn--primary):focus {
-  background-color: #0067B9;
+  background-color: white;
   border-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0); /* Adjust the values as needed */
 }
 
 /* ------------------------------------------------------------------- 
@@ -3985,6 +4000,7 @@ footer a {
 .ss-go-top a:focus {
   background-color: #0067B9;
   color: white;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0);
 }
 
 /* ------------------------------------------------------------------- 
