@@ -1,7 +1,7 @@
 /* =================================================================== 
  *
- *  Sublime v1.0 Main Stylesheet
- *  06-10-2018
+ *  Vortix Medical
+ *  July, 2024
  *  ------------------------------------------------------------------
  *
  *  TOC:
@@ -969,7 +969,7 @@ input[type="button"].btn--primary {
   background: #0067B9;
   border-color: #0067B9;
   color: #FFFFFF;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.80);
 }
 
 .btn.btn--primary:hover,
@@ -984,7 +984,7 @@ input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
   background: #0067B9;
   border-color: #0067B9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0); /* Adjust the values as needed */
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.0); /* Adjust the values as needed */
 }
 
 /* button modifiers
@@ -1967,7 +1967,7 @@ body.menu-is-open {
   text-transform: uppercase;
   letter-spacing: .5rem;
   color: #FFFFFF;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: fixed;
@@ -2291,14 +2291,15 @@ body.menu-is-open {
 .home-content__button .btn:not(.btn--primary) {
   background-color: white;
   border-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  color: #0067B9;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.60);
 }
 
 .home-content__button .btn:not(.btn--primary):hover,
 .home-content__button .btn:not(.btn--primary):focus {
-  background-color: white;
-  border-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0); /* Adjust the values as needed */
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.0); /* Adjust the values as needed */
 }
 
 /* ------------------------------------------------------------------- 
@@ -3984,7 +3985,7 @@ footer a {
   -ms-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
   z-index: 2;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* ------------------------------------------------------------------- 
@@ -4009,7 +4010,7 @@ footer a {
 .ss-go-top a:focus {
   background-color: #0067B9;
   color: white;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0);
+  box-shadow: 0 0px 4px rgba(255, 255, 255, 0);
 }
 
 /* ------------------------------------------------------------------- 
