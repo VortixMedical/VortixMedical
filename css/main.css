@@ -3844,7 +3844,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 3.8rem;
+    font-size: 5.5rem;
   }
 
   .contact-address {
@@ -3872,6 +3872,10 @@ html.no-csstransitions .home-content__main {
     margin-top: 7.2rem;
   }
 
+  .contact-email a {
+    font-size: 5rem;
+  }
+
   .contact-address {
     font-size: 2.1rem;
   }
@@ -3892,7 +3896,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .contact-address {
@@ -3912,7 +3916,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .contact-address {
