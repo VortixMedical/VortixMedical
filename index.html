@@ -237,7 +237,7 @@
                 </div>
                 <div class="item-service__text">
                     <h3 class="item-title">Financial Integration</h3>
-                    <p>The Department of Regulatory Compliance for Health ensures compliance with all regulations and standards related to the development, manufacturing, importation, storage, and distribution of health products.
+                    <p>Leveraging financial data and systems across the company’s operations to optimize profitability, manage risks, and comply with regulatory requirements in the medical products industry.
                     </p>
                 </div>
             </div>
@@ -523,16 +523,41 @@
         <span class="close" id="closeModal">&times;</span>
         
         <!-- Your form content goes here -->
-        <h2>Modal Form</h2>
-        <p>Email form will live here.</p>
-        <form action="/submit-form" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+        <h2></h2>
+        <form>
+            <div>
+                <label for="sampleInput">Your email</label>
+                <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
+        </div>
+        <div>
+                <label for="sampleRecipientInput">Product of interest</label>
+                <div class="ss-custom-select">
+                    <select class="full-width" id="sampleRecipientInput">
+                        <option value="Option 1">Baumanometers</option>
+                        <option value="Option 2">Concentrators</option>
+                        <option value="Option 4">Drug Screening</option>
+                        <option value="Option 5">Face Masks</option>
+                        <option value="Option 6">Fertility</option>
+                        <option value="Option 7">Blood Glucose Monitoring</option>
+                        <option value="Option 8">Oximeters</option>
+                        <option value="Option 9">Thermometers</option>
+                        <option value="Option 9">Other</option>
+                    </select>
+                </div>
+        </div>
+        
+            <label for="exampleMessage">Message</label>
+            <textarea class="full-width" placeholder="Your message" id="exampleMessage"></textarea>
+
+            <label class="add-bottom">
+                <input type="checkbox">
+                <span class="label-text">Send a copy to yourself</span>
+            </label>
+        
+            <input class="btn--primary full-width" type="submit" value="Submit">
+
+    </form>
+
 </div>
 
 <!-- JavaScript to control the modal -->
