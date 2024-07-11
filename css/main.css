@@ -4127,14 +4127,17 @@ footer a {
   
   /* Modal */
   .modal {
-      background-color: white;
-      margin: 10% auto; /* Center the modal vertically and horizontally */
-      padding: 20px;
-      border-radius: 5px;
-      width: 80%;
-      max-width: 600px; /* Max width of the modal */
-      position: relative;
-  }
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px; /* Max width of the modal */
+    position: fixed;
+    top: 50%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Translate to center */
+}
+
   
   /* Close button */
   .close {

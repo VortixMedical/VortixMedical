@@ -469,154 +469,67 @@
     ================================================== -->
     <section id="contact" class="s-contact target-section">
 
-            <div class="grid-overlay">
-                <div></div>
-            </div>
-
-        <div class="row section-header narrow" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Keep In Touch</h3>
-                <h1 class="display-2">Feel free to contact us for any <br> project idea or collaboration</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="col-full">
-                <p class="contact-email">
-                    <a href="#" id="openModal">info@vortix.com</a>
-                </p>
-                <p class="contact-address">
-                Xavier Villaurrutia No. 39, <br>
-                Zona Urbana Río Tijuana, C.P. 22010
-                </p>
-                <p class="contact-numbers">
-                US: (+1 619.878.2821) &nbsp; MX: (+52 664.973.0126)
-                </p>
-
-                <ul class="contact-social">
-                    <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-dribbble"></i></a>
-                    </li>
-                </ul>
-            </div>
+        <div class="grid-overlay">
+            <div></div>
         </div>
 
-    </section> <!-- end s-contact -->
-
-    <!-- Overlay -->
-<div class="overlay" id="overlay">
-    <!-- Modal form -->
-    <div class="modal">
-        <!-- Close button -->
-        <span class="close" id="closeModal">&times;</span>
-        
-        <!-- Your form content goes here -->
-        <h2></h2>
-        <form>
-            <div>
-                <label for="sampleInput">Your email</label>
-                <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
+    <div class="row section-header narrow" data-aos="fade-up">
+        <div class="col-full">
+            <h3 class="subhead">Keep In Touch</h3>
+            <h1 class="display-2">Feel free to contact us for any <br> project idea or collaboration</h1>
         </div>
-        <div>
-                <label for="sampleRecipientInput">Product of interest</label>
-                <div class="ss-custom-select">
-                    <select class="full-width" id="sampleRecipientInput">
-                        <option value="Option 1">Baumanometers</option>
-                        <option value="Option 2">Concentrators</option>
-                        <option value="Option 4">Drug Screening</option>
-                        <option value="Option 5">Face Masks</option>
-                        <option value="Option 6">Fertility</option>
-                        <option value="Option 7">Blood Glucose Monitoring</option>
-                        <option value="Option 8">Oximeters</option>
-                        <option value="Option 9">Thermometers</option>
-                        <option value="Option 9">Other</option>
-                    </select>
-                </div>
+    </div> <!-- end section-header -->
+
+    <div class="row contact-main" data-aos="fade-up">
+        <div class="col-full">
+            <p class="contact-email">
+                <a href="#" id="openModal">info@vortix.com</a>
+            </p>
+            <p class="contact-address">
+            Xavier Villaurrutia No. 39, <br>
+            Zona Urbana Río Tijuana, C.P. 22010
+            </p>
+            <p class="contact-numbers">
+            US: (+1 619.878.2821) &nbsp; MX: (+52 664.973.0126)
+            </p>
+
+            <ul class="contact-social">
+                <li>
+                    <a href="#0"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#0"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#0"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#0"><i class="fab fa-behance"></i></a>
+                </li>
+                <li>
+                    <a href="#0"><i class="fab fa-dribbble"></i></a>
+                </li>
+            </ul>
         </div>
-        
-            <label for="exampleMessage">Message</label>
-            <textarea class="full-width" placeholder="Your message" id="exampleMessage"></textarea>
+    </div>
 
-            <label class="add-bottom">
-                <input type="checkbox">
-                <span class="label-text">Send a copy to yourself</span>
-            </label>
-        
-            <input class="btn--primary full-width" type="submit" value="Submit">
-
-    </form>
-
-</div>
-
-<!-- JavaScript to control the modal -->
-<script>
-    // Get the modal and overlay elements
-    var modal = document.querySelector('.modal');
-    var overlay = document.getElementById('overlay');
-    
-    // Get the link that opens the modal
-    var openModalLink = document.getElementById('openModal');
-    
-    // Get the close button inside the modal
-    var closeModalBtn = document.getElementById('closeModal');
-    
-    // Function to open the modal
-    function openModal() {
-        modal.style.display = 'block';
-        overlay.style.display = 'block';
-    }
-    
-    // Function to close the modal
-    function closeModal() {
-        modal.style.display = 'none';
-        overlay.style.display = 'none';
-    }
-    
-    // Event listener for opening the modal when link is clicked
-    openModalLink.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default link behavior (don't follow the link)
-        openModal();
-    });
-    
-    // Event listener for closing the modal when close button is clicked
-    closeModalBtn.addEventListener('click', function() {
-        closeModal();
-    });
-    
-    // Close the modal if the user clicks outside the modal content
-    window.addEventListener('click', function(event) {
-        if (event.target == overlay) {
-            closeModal();
-        }
-    });
-</script>
+</section> <!-- end s-contact -->
 
 
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="col-full ss-copyright">
-                <span>© 2024 Vortix Medical. All rights reserved.</span> 
-            </div>
+
+<!-- footer
+================================================== -->
+<footer>
+    <div class="row">
+        <div class="col-full ss-copyright">
+            <span>© 2024 Vortix Medical. All rights reserved.</span> 
         </div>
+    </div>
 
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">Back to Top</a>
-        </div>
-    </footer>
+    <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">Back to Top</a>
+    </div>
+</footer>
 
 
     <!-- photoswipe background
@@ -665,4 +578,94 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+
+        <!-- Overlay -->
+        <div class="overlay" id="overlay">
+            <!-- Modal form -->
+            <div class="modal">
+                <!-- Close button -->
+                <span class="close" id="closeModal">&times;</span>
+                
+                <!-- Your form content goes here -->
+                <h2></h2>
+                <form>
+                    <div>
+                        <label for="sampleInput">Your email</label>
+                        <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
+                </div>
+                <div>
+                        <label for="sampleRecipientInput">Product of interest</label>
+                        <div class="ss-custom-select">
+                            <select class="full-width" id="sampleRecipientInput">
+                                <option value="Option 1">Baumanometers</option>
+                                <option value="Option 2">Concentrators</option>
+                                <option value="Option 4">Drug Screening</option>
+                                <option value="Option 5">Face Masks</option>
+                                <option value="Option 6">Fertility</option>
+                                <option value="Option 7">Blood Glucose Monitoring</option>
+                                <option value="Option 8">Oximeters</option>
+                                <option value="Option 9">Thermometers</option>
+                                <option value="Option 9">Other</option>
+                            </select>
+                        </div>
+                </div>
+                
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="full-width" placeholder="Your message" id="exampleMessage"></textarea>
+        
+                    <label class="add-bottom">
+                        <input type="checkbox">
+                        <span class="label-text">Send a copy to yourself</span>
+                    </label>
+                
+                    <input class="btn--primary full-width" type="submit" value="Submit">
+        
+            </form>
+        
+        </div>
+        
+        <!-- JavaScript to control the modal -->
+        <script>
+            // Get the modal and overlay elements
+            var modal = document.querySelector('.modal');
+            var overlay = document.getElementById('overlay');
+            
+            // Get the link that opens the modal
+            var openModalLink = document.getElementById('openModal');
+            
+            // Get the close button inside the modal
+            var closeModalBtn = document.getElementById('closeModal');
+            
+            // Function to open the modal
+            function openModal() {
+                modal.style.display = 'block';
+                overlay.style.display = 'block';
+            }
+            
+            // Function to close the modal
+            function closeModal() {
+                modal.style.display = 'none';
+                overlay.style.display = 'none';
+            }
+            
+            // Event listener for opening the modal when link is clicked
+            openModalLink.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default link behavior (don't follow the link)
+                openModal();
+            });
+            
+            // Event listener for closing the modal when close button is clicked
+            closeModalBtn.addEventListener('click', function() {
+                closeModal();
+            });
+            
+            // Close the modal if the user clicks outside the modal content
+            window.addEventListener('click', function(event) {
+                if (event.target == overlay) {
+                    closeModal();
+                }
+            });
+        </script>
+
 </body>
+
