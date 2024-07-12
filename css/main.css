@@ -1835,6 +1835,17 @@ body.menu-is-open {
   counter-reset: ctr;
 }
 
+.header-nav__list2 {
+  font-family: "uni_neuebook", sans-serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 1.286;
+  margin: 0 0 4.2rem 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: ctr;
+}
+
 .header-nav__list li {
   padding: .9rem 0;
 }
