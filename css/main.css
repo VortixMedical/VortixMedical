@@ -1837,8 +1837,8 @@ body.menu-is-open {
 
 .header-nav__list2 {
   font-family: "uni_neuebook", sans-serif;
-  font-weight: 600;
-  font-size: 2.8rem;
+  font-weight: 400;
+  font-size: 2rem;
   line-height: 1.286;
   margin: 0 0 4.2rem 0;
   padding: 0;
@@ -1848,6 +1848,10 @@ body.menu-is-open {
 
 .header-nav__list li {
   padding: .9rem 0;
+}
+
+.header-nav__list2 li {
+  padding: .6rem 0;
 }
 
 .header-nav__list a {
@@ -2026,6 +2030,10 @@ body.menu-is-open {
  * header
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
+  .header-nav {
+    width: 50%;
+  }
+
   .header-logo {
     left: 60px;
   }
@@ -2037,6 +2045,10 @@ body.menu-is-open {
 }
 
 @media only screen and (max-width:900px) {
+  .header-nav {
+    width: 50%;
+  }
+
   .header-nav h3 {
     padding-right: 0;
   }
@@ -2065,7 +2077,7 @@ body.menu-is-open {
   }
 
   .header-nav {
-    width: calc(100% - 80px);
+    width: 50%;
     padding: 3.6rem 3rem 3.6rem 5rem;
   }
 
@@ -2082,6 +2094,7 @@ body.menu-is-open {
   }
 
   .header-nav {
+    width: calc(100% - 40px);
     padding: 3.6rem 3rem 3.6rem 4rem;
   }
 
