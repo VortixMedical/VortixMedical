@@ -3100,7 +3100,7 @@ html.no-csstransitions .home-content__main {
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
 .masonry-wrap {
-  margin-top: 7.2rem;
+  margin-top: 1.2rem;
   max-width: 1100px;
   position: relative;
 }
