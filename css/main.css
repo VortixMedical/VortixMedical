@@ -3777,6 +3777,12 @@ html.no-csstransitions .home-content__main {
   margin: 0;
 }
 
+.cls-1 {
+  fill: #ffffff;
+  stroke-width: 0px;
+}
+
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact
