@@ -3142,6 +3142,7 @@ html.no-csstransitions .home-content__main {
   display: block;
 }
 
+
 .item-folio__thumb a::before {
   display: block;
   background-color: #0066b9b9;
@@ -3159,8 +3160,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__thumb a::after {
-  content: "...";
-  font-family: georgia, serif;
+  content: "";
+  font-family: "uni_neueregular", sans-serif;
   font-size: 2.7rem;
   display: block;
   height: 30px;
@@ -3172,7 +3173,7 @@ html.no-csstransitions .home-content__main {
   left: 50%;
   top: 50%;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s ease-in-out;
@@ -3181,6 +3182,16 @@ html.no-csstransitions .home-content__main {
   -ms-transform: scale(0.5);
   transform: scale(0.5);
   z-index: 1;
+}
+
+/* Disable pointer events for the unclickable thumbnail */
+.unclickable-thumb .thumb-link {
+  pointer-events: none;
+}
+
+/* Optionally set cursor to default for clarity */
+.unclickable-thumb .thumb-link {
+  cursor: default;
 }
 
 .item-folio__text {
@@ -3338,6 +3349,209 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:400px) {
   .masonry-wrap {
     padding: 0 25px;
+  }
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## bricks/masonry2
+ * ------------------------------------------------------------------- */
+
+.item-folio2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-folio2__thumb img {
+  vertical-align: bottom;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.item-folio2__thumb a {
+  display: block;
+}
+
+
+.item-folio2__thumb a::before {
+  display: block;
+  background-color: #0066b9b9;
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.item-folio2__thumb a::after {
+  content: "";
+  font-family: "uni_neueregular", sans-serif;
+  font-size: 2.7rem;
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  z-index: 1;
+}
+
+/* Disable pointer events for the unclickable thumbnail */
+.unclickable-thumb .thumb-link {
+  pointer-events: none;
+}
+
+/* Optionally set cursor to default for clarity */
+.unclickable-thumb .thumb-link {
+  cursor: default;
+}
+
+.item-folio2__text {
+  position: absolute;
+  left: 0;
+  bottom: 3.6rem;
+  padding: 0 3.3rem;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.item-folio2__title {
+  font-family: "uni_neuebold", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.286;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  margin: 0 0 .3rem 0;
+}
+
+.item-folio2__cat {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "uni_neueregular", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.714;
+  margin-bottom: 0;
+}
+
+.item-folio2__caption {
+  display: none;
+}
+
+.item-folio2__project-link {
+  display: block;
+  color: #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
+  border-radius: 50%;
+  height: 4.2rem;
+  width: 4.2rem;
+  text-align: center;
+  z-index: 500;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.item-folio2__project-link i {
+  font-size: 1.8rem;
+  line-height: 4.2rem;
+}
+
+.item-folio2__project-link::before {
+  display: block;
+  content: "";
+  height: 3rem;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+}
+
+.item-folio2__project-link:hover,
+.item-folio2__project-link:focus,
+.item-folio2__project-link:active {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* on hover 
+ * ----------------------------------------------- */
+.item-folio2:hover .item-folio__thumb a::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item-folio2:hover .item-folio__thumb a::after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.item-folio2:hover .item-folio__thumb img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.item-folio2:hover .item-folio__project-link,
+.item-folio2:hover .item-folio__text {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * works
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width:800px) {
+  .item-folio2__title,
+  .item-folio2__cat {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  .item-folio2__title,
+  .item-folio2__cat {
+    font-size: 1.4rem;
   }
 
 }
