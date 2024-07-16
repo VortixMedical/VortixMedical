@@ -552,4 +552,96 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+
+            <!-- Form Popup Modal
+    ================================================== -->
+
+        <!-- Overlay -->
+        <div class="overlay" id="overlay">
+            <!-- Modal form -->
+            <div class="modal">
+                <!-- Close button -->
+                <span class="close" id="closeModal">&times;</span>
+                
+                <!-- Your form content goes here -->
+                <h2></h2>
+                <form>
+                    <div>
+                        <label for="sampleInput">Your email</label>
+                        <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
+                </div>
+                <div>
+                        <label for="sampleRecipientInput">Product of interest</label>
+                        <div class="ss-custom-select">
+                            <select class="full-width" id="sampleRecipientInput">
+                                <option value="Option 1">Baumanometers</option>
+                                <option value="Option 2">Concentrators</option>
+                                <option value="Option 4">Drug Screening</option>
+                                <option value="Option 5">Face Masks</option>
+                                <option value="Option 6">Fertility</option>
+                                <option value="Option 7">Blood Glucose Monitoring</option>
+                                <option value="Option 8">Oximeters</option>
+                                <option value="Option 9">Thermometers</option>
+                                <option value="Option 9">Other</option>
+                            </select>
+                        </div>
+                </div>
+                
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="full-width" placeholder="Your message" id="exampleMessage"></textarea>
+        
+                    <label class="add-bottom">
+                        <input type="checkbox">
+                        <span class="label-text">Send a copy to yourself</span>
+                    </label>
+                
+                    <input class="btn--primary full-width" type="submit" value="Submit">
+        
+            </form>
+        
+        </div>
+        
+        <!-- JavaScript to control the modal -->
+        <script>
+            // Get the modal and overlay elements
+            var modal = document.querySelector('.modal');
+            var overlay = document.getElementById('overlay');
+            
+            // Get the link that opens the modal
+            var openModalLink = document.getElementById('openModal');
+            
+            // Get the close button inside the modal
+            var closeModalBtn = document.getElementById('closeModal');
+            
+            // Function to open the modal
+            function openModal() {
+                modal.style.display = 'block';
+                overlay.style.display = 'block';
+            }
+            
+            // Function to close the modal
+            function closeModal() {
+                modal.style.display = 'none';
+                overlay.style.display = 'none';
+            }
+            
+            // Event listener for opening the modal when link is clicked
+            openModalLink.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default link behavior (don't follow the link)
+                openModal();
+            });
+            
+            // Event listener for closing the modal when close button is clicked
+            closeModalBtn.addEventListener('click', function() {
+                closeModal();
+            });
+            
+            // Close the modal if the user clicks outside the modal content
+            window.addEventListener('click', function(event) {
+                if (event.target == overlay) {
+                    closeModal();
+                }
+            });
+        </script>
+
 </body>
